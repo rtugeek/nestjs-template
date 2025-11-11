@@ -7,6 +7,6 @@
 
   <p align="center">NestJS quick start template</p>
 
-## 内置集成工具
+## Built-in integrations
 
-- 代码格式化：eslint + @antfu/eslint-config
+- Code formatting: `eslint` + `@antfu/eslint-config`
