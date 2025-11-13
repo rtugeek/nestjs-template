@@ -1,4 +1,4 @@
-import { RedisModuleOptions } from '@liaoliaots/nestjs-redis/dist/redis/interfaces/redis-module-options.interface'
+import { RedisModuleOptions } from '@liaoliaots/nestjs-redis'
 import { ConfigService } from '@nestjs/config'
 
 export function redisConfig(configService: ConfigService): RedisModuleOptions {
