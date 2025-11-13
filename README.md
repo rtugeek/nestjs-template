@@ -22,7 +22,7 @@
 2. Run `npm install`
 3. Configure your environment variables in a `.env` file (see example below)
 
-``dotenv
+```dotenv
 SERVER_PORT=5555
 SERVER_BASE_URL=/api/v1
 
