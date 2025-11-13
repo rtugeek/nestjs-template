@@ -10,3 +10,5 @@
 ## Built-in integrations
 
 - Code formatting: `eslint` + `@antfu/eslint-config`
+- ORM: `TypeORM`
+- Database: `MySQL` (via `mysql2` driver)
