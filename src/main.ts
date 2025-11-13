@@ -21,7 +21,7 @@ async function bootstrap() {
   })
   const configService = app.get(ConfigService)
 
-  const baseUrl = configService.get<string>('SERVER_BASE_URL')
+  const baseUrl = configService.get<string>('SERVER_BASE_URL') ?? '/api'
   const port = configService.get<number>('SERVER_PORT') || 3000
 
   const logger = new Logger('Bootstrap')
@@ -29,7 +29,7 @@ async function bootstrap() {
   logger.log(`Server is running on port: ${port}`)
 
   app!.useGlobalFilters(new GlobalExceptionFilter())
-  app.setGlobalPrefix('/api/v1')
+  app.setGlobalPrefix(baseUrl)
 
   await app.listen(port)
 }
